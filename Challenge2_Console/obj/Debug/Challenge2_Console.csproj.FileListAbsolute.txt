@@ -1,0 +1,17 @@
+C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge2_Console\obj\Debug\Challenge2_Console.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge2_Console\obj\Debug\Challenge2_Console.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge2_Console\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge2_Console\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge2_Console\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge2_Console\bin\Debug\Challenge2_Console.exe.config
+C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge2_Console\bin\Debug\Challenge2_Console.exe
+C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge2_Console\bin\Debug\Challenge2_Console.pdb
+C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge2_Console\bin\Debug\Challenge2_Library.dll
+C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge2_Console\bin\Debug\Challenge2_Tests.dll
+C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge2_Console\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge2_Console\bin\Debug\Challenge2_Library.pdb
+C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge2_Console\bin\Debug\Challenge2_Tests.pdb
+C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge2_Console\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge2_Console\obj\Debug\Challenge2_Console.csproj.CopyComplete
+C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge2_Console\obj\Debug\Challenge2_Console.exe
+C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge2_Console\obj\Debug\Challenge2_Console.pdb
