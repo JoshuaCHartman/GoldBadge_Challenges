@@ -21,7 +21,9 @@ namespace Challenge2_Library
         public string ClaimDescription { get; set; }
         public double ClaimAmount { get; set; }
         public DateTime DateOfIncident { get; set; }
+        public string DateOfIncidentString { get; set; }
         public DateTime DateOfClaim { get; set; }
+        public string DateOfClaimString { get; set; }
         public bool ClaimIsValid { get; set; }
 
         public Claim() { }

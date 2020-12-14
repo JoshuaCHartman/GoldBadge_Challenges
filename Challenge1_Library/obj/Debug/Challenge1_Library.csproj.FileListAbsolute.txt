@@ -4,3 +4,9 @@ C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge1_Library\obj\Debug\C
 C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge1_Library\obj\Debug\Challenge1_Library.csproj.CoreCompileInputs.cache
 C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge1_Library\obj\Debug\Challenge1_Library.dll
 C:\ElevenFiftyProjects\DotNetProjects\ConsoleApp1\Challenge1_Library\obj\Debug\Challenge1_Library.pdb
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Library\bin\Debug\Challenge1_Library.dll
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Library\bin\Debug\Challenge1_Library.pdb
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Library\obj\Debug\Challenge1_Library.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Library\obj\Debug\Challenge1_Library.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Library\obj\Debug\Challenge1_Library.dll
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Library\obj\Debug\Challenge1_Library.pdb

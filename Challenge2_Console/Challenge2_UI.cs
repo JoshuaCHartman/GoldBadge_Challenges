@@ -18,7 +18,7 @@ namespace Challenge2
         //Run & Seed
         public void Run()
         {
-            Console.WindowWidth = 175; // set console window size to wider than default to properly display data
+            Console.WindowWidth = 175; // set console window size to wider than default to properly display table of data
             SeedListOfClaims();
             Menu();
         }
@@ -144,8 +144,8 @@ namespace Challenge2
                 row["Type"] = $"{claim.ClaimType}";
                 row["Description"] = $"{claim.ClaimDescription}";
                 row["Amount"] = $"${claim.ClaimAmount}";
-                row["Date Occurred"] = $"{claim.DateOfIncident}";
-                row["Date Submitted"] = $"{claim.DateOfClaim}";
+                row["Date Occurred"] = $"{claim.DateOfIncident.ToShortDateString()}";
+                row["Date Submitted"] = $"{claim.DateOfClaim.ToShortDateString()}";
                 row["IsValid"] = $"{claim.ClaimIsValid}";
 
                 // add the row to the data table
@@ -212,7 +212,7 @@ namespace Challenge2
                 Console.WriteLine($"Next Claim to handle:\n ");
 
                 var claim = new Claim();
-                claim = queueOfClaims.Peek();
+                claim = queueOfClaims.Peek(); //I used PEEK as opposed to DEQUEUE (claim = queueOfClaims.Dequeue();) since seed entries are limited. Both pull oldest queue entry.
 
                 // make new DATATABLE
                 DataTable dt = new DataTable();
@@ -234,8 +234,8 @@ namespace Challenge2
                 row["Type"] = $"{claim.ClaimType}";
                 row["Description"] = $"{claim.ClaimDescription}";
                 row["Amount"] = $"${claim.ClaimAmount}";
-                row["Date Occurred"] = $"{claim.DateOfIncident}";
-                row["Date Submitted"] = $"{claim.DateOfClaim}";
+                row["Date Occurred"] = $"{claim.DateOfIncident.ToShortDateString()}";
+                row["Date Submitted"] = $"{claim.DateOfClaim.ToShortDateString()}";
                 row["IsValid"] = $"{claim.ClaimIsValid}";
 
                 // add the row to the data table
@@ -282,8 +282,8 @@ namespace Challenge2
                 row["Type"] = $"{claim.ClaimType}";
                 row["Description"] = $"{claim.ClaimDescription}";
                 row["Amount"] = $"${claim.ClaimAmount}";
-                row["Date Occurred"] = $"{claim.DateOfIncident}";
-                row["Date Submitted"] = $"{claim.DateOfClaim}";
+                row["Date Occurred"] = $"{claim.DateOfIncident.ToShortDateString()}";
+                row["Date Submitted"] = $"{claim.DateOfClaim.ToShortDateString()}";
                 row["IsValid"] = $"{claim.ClaimIsValid}";
 
                 // add the row to the data table
@@ -396,7 +396,6 @@ namespace Challenge2
                     // Run check to make sure entered DATETIME is in correct format
                     if (DateTime.TryParse(claimDateOccurred, usCulture.DateTimeFormat, System.Globalization.DateTimeStyles.None, out userDateOccurred))
                     {
-
                         newClaim.DateOfIncident = userDateOccurred;
                         keepRunningDateOccurred = false;
                     }
@@ -416,7 +415,6 @@ namespace Challenge2
                     // Run check to make sure entered DATETIME is in correct format
                     if (DateTime.TryParse(claimDateSubmitted, usCulture.DateTimeFormat, System.Globalization.DateTimeStyles.None, out userDateSubmitted))
                     {
-
                         newClaim.DateOfClaim = userDateSubmitted;
                         keepRunningDateSubmitted = false;
                     }
@@ -461,8 +459,8 @@ namespace Challenge2
         private void SeedListOfClaims()
         {
             //DateTime date1 = DateTime.Parse(04/25/2018);
-
-
+            
+            
             Claim claim1 = new Claim(1, Type.Car, "Car accident on 465", 400.00, Convert.ToDateTime("2018, 04, 25"), Convert.ToDateTime("2018/ 04/ 27"), true);
             Claim claim2 = new Claim(2, Type.Home, "House fire in kitchen", 4000.00, Convert.ToDateTime("2018/ 04/ 11"), Convert.ToDateTime("2018/ 04/ 12"), true);
             Claim claim3 = new Claim(3, Type.Theft, "Stolen pancakes", 4.00, Convert.ToDateTime("2018/ 04/ 27"), Convert.ToDateTime("2018/ 06/ 01"), false);

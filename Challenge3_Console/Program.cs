@@ -10,6 +10,8 @@ namespace Challenge3_Console
     {
         static void Main(string[] args)
         {
+            Challenge3_UI program = new Challenge3_UI();
+            program.Run();
         }
     }
 }

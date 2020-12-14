@@ -268,8 +268,17 @@ namespace Challenge1
                     keepRunning = false;
                 }
             }
-            // add new entry to menu
-            _menuItemRepo.UpdateMenuItem(oldmenuItem, newMenuItem);
+            // add new entry to menu & verify
+            bool wasUpdated = _menuItemRepo.UpdateMenuItem(oldmenuItem, newMenuItem);
+            if (wasUpdated)
+            {
+                Console.WriteLine("Meal updated.");
+            }
+            else
+            {
+                Console.WriteLine("Could not update...");
+            }
+
         }
         public void DeleteMeal()
         {
@@ -279,7 +288,17 @@ namespace Challenge1
                 "Please enter a meal NUMBER :");
             var mealNumber = Convert.ToInt32(Console.ReadLine());
 
-            _menuItemRepo.DeleteMenuItemByMealNumber(mealNumber);
+            // Delete and verify 
+            bool wasUpdated=_menuItemRepo.DeleteMenuItemByMealNumber(mealNumber);
+            if (wasUpdated)
+            {
+                Console.WriteLine("Meal removed.");
+            }
+            else
+            {
+                Console.WriteLine("Could not update...");
+            }
+
         }
         private void SeedListOfMeals()
         {

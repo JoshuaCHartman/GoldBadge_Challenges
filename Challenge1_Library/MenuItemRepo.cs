@@ -29,7 +29,6 @@ namespace Challenge1_Library
         //Update - update properties of a MenuItem by MEAL NUMBER using Get helper method
         public bool UpdateMenuItem(MenuItem oldMenuItem, MenuItem newMenuItem)
         {
-
             // Update the MenuItem
             if (oldMenuItem != null)
             {
