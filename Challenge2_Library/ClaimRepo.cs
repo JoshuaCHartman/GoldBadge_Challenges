@@ -37,8 +37,12 @@ namespace Challenge2_Library
 
         //Helper Methods
 
-        //Get next CLAIM from Queue -- > in console
+        //Get next CLAIM from Queue -- > in console (dequeue or peek)
         
+        // Below can be used to give a total of entries in queue since there is not indexing ability for queues:
+        // int claimCount= queueOfClaims.ToArray().ToList().IndexOf(claim);
+
+
 
 
 

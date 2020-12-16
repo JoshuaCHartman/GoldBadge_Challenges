@@ -114,7 +114,13 @@ namespace Challenge2
             foreach (Claim claim in queueOfClaims)
             {
                 Console.WriteLine($"Claim ID Number {claim.ClaimId} // Type: {claim.ClaimType} // Description: {claim.ClaimDescription} // Amount: ${claim.ClaimDescription} // Date Occurred : {claim.DateOfIncident} // Date Submitted : {claim.DateOfClaim} // Valid : {claim.ClaimIsValid}\n");
+                
+                // Below can be used to give a total of entries in queue since there is not indexing ability for queues
+                // int claimCount= queueOfClaims.ToArray().ToList().IndexOf(claim);
+              
             }
+            
+
 
         }
         public void DisplayConvertedQueueToDataTable()
@@ -183,7 +189,7 @@ namespace Challenge2
             }
         }
 
-        //Take (PEEK) care of next claim - DOES NOT REMOVE FROM QUEUE 
+        //Take (PEEK) care of next claim - DOES NOT REMOVE FROM QUEUE (change to dequeu to remove)
         public void TakeCareOfNextClaimUnformatted() //UNFORMATTED data for testing functionality
         {
             // get queue and check to see if queue has entries to avoid null exception error
@@ -212,7 +218,7 @@ namespace Challenge2
                 Console.WriteLine($"Next Claim to handle:\n ");
 
                 var claim = new Claim();
-                claim = queueOfClaims.Peek(); //I used PEEK as opposed to DEQUEUE (claim = queueOfClaims.Dequeue();) since seed entries are limited. Both pull oldest queue entry.
+                claim = queueOfClaims.Peek(); //.PEEK as opposed to .DEQUEUE (claim = queueOfClaims.Dequeue();) display and pull oldest queue entry.
 
                 // make new DATATABLE
                 DataTable dt = new DataTable();
@@ -243,6 +249,24 @@ namespace Challenge2
 
                 //use the method below to print to the console the data table
                 ShowFormattedQueueDataTable(dt);
+
+                // User input to DEQUEU ("deal with claim")
+                Console.WriteLine("Do you wish to deal with this claim now? Y/N ");
+                var inputForNextClaim = Console.ReadLine().ToUpper();
+                if(inputForNextClaim == "Y")
+                {
+                    claim = queueOfClaims.Dequeue();
+                    Console.WriteLine("Claim removed from queue...");
+                }
+                else if (inputForNextClaim == "N")
+                {
+                    Console.WriteLine("Claim returned to queue..");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid entry.");
+                }
+
                 Console.WriteLine("\n" +
                     "\n" +
                     "Press any key to return to main menu...");
@@ -459,11 +483,11 @@ namespace Challenge2
         private void SeedListOfClaims()
         {
             //DateTime date1 = DateTime.Parse(04/25/2018);
-            
-            
+
             Claim claim1 = new Claim(1, Type.Car, "Car accident on 465", 400.00, Convert.ToDateTime("2018, 04, 25"), Convert.ToDateTime("2018/ 04/ 27"), true);
             Claim claim2 = new Claim(2, Type.Home, "House fire in kitchen", 4000.00, Convert.ToDateTime("2018/ 04/ 11"), Convert.ToDateTime("2018/ 04/ 12"), true);
             Claim claim3 = new Claim(3, Type.Theft, "Stolen pancakes", 4.00, Convert.ToDateTime("2018/ 04/ 27"), Convert.ToDateTime("2018/ 06/ 01"), false);
+            
 
             _claimRepo.AddClaimToQueue(claim1);
             _claimRepo.AddClaimToQueue(claim2);

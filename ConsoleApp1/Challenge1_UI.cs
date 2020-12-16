@@ -7,8 +7,6 @@ using Challenge1;
 using Challenge1_Library;
 
 
-
-
 namespace Challenge1
 {
     class Challenge1_UI
@@ -94,7 +92,7 @@ namespace Challenge1
             Console.Clear();
             foreach (MenuItem menuItem in listOfMeals)
             {
-                Console.WriteLine($"Meal Number: {menuItem.MealNumber} Price: ${menuItem.MealPrice}\n" +
+                Console.Write($"Meal Number: {menuItem.MealNumber}\t Price: ${menuItem.MealPrice}\n" +
                     $"{menuItem.MealName}: {menuItem.MealDescription}\n" +
                     $"Ingredients: ");
                 foreach (string ingredient in menuItem.MealIngredients)
@@ -106,12 +104,12 @@ namespace Challenge1
             }
 
         }
-        // UPDATE CREATE AND UPDATE METHODS TO NOT THROW EXCEPTIONS - USE FROM CHALLENGE 2
         public void CreateNewMeal()
         {
             Console.Clear();
             ShowListOfMeals();
             MenuItem newMenuItem = new MenuItem();
+            List<MenuItem> listOfMeals = _menuItemRepo.GetMenuItemList();
 
             // Enter info for single variables
             Console.WriteLine("Adding New Meal...\n");
@@ -131,10 +129,25 @@ namespace Challenge1
                 else
                 {
                     var convertedMealNumber = Convert.ToInt32(newNumber);
-                    newMenuItem.MealNumber = convertedMealNumber;
-                    keepRunningConvertMealNumber = false;
+
+                    //Check to see if .MealNumber already exists (options through List.Find and LINQ .FirstOrDefault
+                    //LINQ method = .FirstOrDeFault : 
+                    //var containsMealNumber = listOfMeals.FirstOrDefault(menuItem => menuItem.MealNumber == convertedMealNumber);
+
+                    // list.Find() method :
+                    var containsMealNumber = listOfMeals.Find(menuItem => menuItem.MealNumber == convertedMealNumber);
+                    if (containsMealNumber == null) // no menuItem.MealNumber found
+                    {
+                        newMenuItem.MealNumber = convertedMealNumber;
+                        keepRunningConvertMealNumber = false;
+                    }
+                    else // menuItem.MealNumber found
+                    {
+                        Console.WriteLine("Enter a meal number that is not already in use.");
+                    }
                 }
             }
+
 
             // Meal Name
             Console.WriteLine("Enter meal NAME : ");
@@ -289,7 +302,7 @@ namespace Challenge1
             var mealNumber = Convert.ToInt32(Console.ReadLine());
 
             // Delete and verify 
-            bool wasUpdated=_menuItemRepo.DeleteMenuItemByMealNumber(mealNumber);
+            bool wasUpdated = _menuItemRepo.DeleteMenuItemByMealNumber(mealNumber);
             if (wasUpdated)
             {
                 Console.WriteLine("Meal removed.");
