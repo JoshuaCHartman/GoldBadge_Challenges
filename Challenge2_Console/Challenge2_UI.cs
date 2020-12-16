@@ -176,7 +176,7 @@ namespace Challenge2
             Console.WriteLine("{0,7} \t {1,6} \t {2,25} \t {3,8} \t {4,15} \t {5,15} \t {6,8}", "ClaimID", "Type", "Description", "Amount", "DateOfAccident", "DateOfClaim", "IsValid");
 
             //Print rows to fall under column heading with spaces & tabs
-            foreach (DataRow row in table.Rows) //(Var didn't work - must be DataRow class)
+            foreach (DataRow row in table.Rows) //("var" didn't work - must be DataRow class)
             {
                 Console.WriteLine("{0,7} \t {1,6} \t {2,25} \t {3,8} \t {4,15} \t {5,15} \t {6,8}",
                     row["ID"],
@@ -189,8 +189,8 @@ namespace Challenge2
             }
         }
 
-        //Take (PEEK) care of next claim - DOES NOT REMOVE FROM QUEUE (change to dequeu to remove)
-        public void TakeCareOfNextClaimUnformatted() //UNFORMATTED data for testing functionality
+        
+        public void TakeCareOfNextClaimUnformatted() //UNFORMATTED data for testing functionality w/ PEEK
         {
             // get queue and check to see if queue has entries to avoid null exception error
             Queue<Claim> queueOfClaims = _claimRepo.ShowQueueofClaims();
@@ -209,7 +209,7 @@ namespace Challenge2
                 Console.WriteLine("Claims queue is currently empty.");
             }
         }
-        public void TakeCareOfNextClaim()
+        public void TakeCareOfNextClaim() //Formatted w/ Dequeue
         {
             // get queue and check to see if queue has entries to avoid null exception error
             Queue<Claim> queueOfClaims = _claimRepo.ShowQueueofClaims();
@@ -255,7 +255,7 @@ namespace Challenge2
                 var inputForNextClaim = Console.ReadLine().ToUpper();
                 if(inputForNextClaim == "Y")
                 {
-                    claim = queueOfClaims.Dequeue();
+                    queueOfClaims.Dequeue();
                     Console.WriteLine("Claim removed from queue...");
                 }
                 else if (inputForNextClaim == "N")
