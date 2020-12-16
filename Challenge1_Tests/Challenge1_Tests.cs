@@ -47,7 +47,7 @@ namespace Challenge1
         }
         //Read
         [TestMethod]
-        public void GetListOfMealsAndCount_ShouldReturnOne()
+        public void GetListOfMealsAndCount_ShouldReturnEqualToOne()
         {
             //Arrange
             //Using test initialization

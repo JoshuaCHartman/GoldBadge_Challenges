@@ -49,11 +49,21 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="Challenge3_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Challenge3_Console\Challenge3_Console.csproj">
+      <Project>{9e2ae035-ac79-49d5-b713-37e9d7a468d8}</Project>
+      <Name>Challenge3_Console</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Challenge3_Library\Challenge3_Library.csproj">
+      <Project>{d0cb7694-caae-491e-9857-8810b848f509}</Project>
+      <Name>Challenge3_Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

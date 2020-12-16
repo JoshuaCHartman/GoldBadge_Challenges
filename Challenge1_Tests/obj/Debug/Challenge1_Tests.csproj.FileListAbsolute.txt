@@ -18,12 +18,9 @@ C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Tes
 C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Tests\bin\Debug\Challenge1_Tests.dll
 C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Tests\bin\Debug\Challenge1_Tests.pdb
 C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Tests\bin\Debug\Challenge1_Library.dll
-C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Tests\bin\Debug\ConsoleApp1.exe
 C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Tests\bin\Debug\Challenge1_Library.pdb
-C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Tests\bin\Debug\ConsoleApp1.pdb
-C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Tests\bin\Debug\ConsoleApp1.exe.config
 C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge1_Tests\obj\Debug\Challenge1_Tests.csprojAssemblyReference.cache
