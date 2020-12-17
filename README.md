@@ -98,7 +98,7 @@ This allowed the manipulation of the list of doors by simpling using the built-i
 <!-- CONTACT -->
 ## Contact
 
-Joshua Hartman - [JoshuaCHartman@gmail.com] - JoshuaCHartman@gmail.com
+Joshua Hartman - [JoshuaCHartman@gmail.com] 
 
 Project Link: [https://github.com/JoshuaCHartman/GoldBadge_Challenges](https://github.com/JoshuaCHartman/GoldBadge_Challengese)
 
