@@ -47,7 +47,6 @@ Gold Badge Challenges: 1, 2, 3
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Included in this repository are the first three Gold Badge Challenges. In addition to the top level priority of completing the required tasks and gaining a deeper understanding of C# and .NET fundamentals, I chose to focus on handling of null exceptions (ie, making an application resistant to the user "breaking" the application through their input). I believe all three challenges successfully demonstrates this input handling.
 
@@ -80,9 +79,6 @@ Each challenge is composed of three directories using the same naming convention
 var nameOfObject = nameOfDictionary[key]
 ```
 This allowed the manipulation of the list of door by simpling using the built-in list operations (example: myList.Add(), myList.Remove(), myList.Clear()). Again, it became clear that many input checking and, in this case, searching functions could be refactored into standalone methods.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
 
 
 <!-- Future Developments / Takeaways -->
