@@ -1,0 +1,6 @@
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge3_Library\obj\Debug\Challenge3_Library.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge3_Library\obj\Debug\Challenge3_Library.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge3_Library\bin\Debug\Challenge3_Library.dll
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge3_Library\bin\Debug\Challenge3_Library.pdb
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge3_Library\obj\Debug\Challenge3_Library.dll
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge3_Library\obj\Debug\Challenge3_Library.pdb

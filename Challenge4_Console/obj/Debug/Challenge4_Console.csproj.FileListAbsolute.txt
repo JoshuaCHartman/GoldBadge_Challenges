@@ -1,0 +1,7 @@
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge4_Console\bin\Debug\Challenge4_Console.exe.config
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge4_Console\bin\Debug\Challenge4_Console.exe
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge4_Console\bin\Debug\Challenge4_Console.pdb
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge4_Console\obj\Debug\Challenge4_Console.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge4_Console\obj\Debug\Challenge4_Console.exe
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge4_Console\obj\Debug\Challenge4_Console.pdb
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges_Hartman\Challenge4_Console\obj\Debug\Challenge4_Console.csprojAssemblyReference.cache
